@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grid Layout 1</title>
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 80px 100px 100px 60px;
+            grid-template-areas:
+                "header header header"
+                "nav article article"
+                "ads article article"
+                "footer footer footer";
+            gap: 0px;
+        }
+
+        header {
+            grid-area: header;
+            background-color: aqua;
+        }
+
+        nav {
+            grid-area: nav;
+            background-color: lightgreen;
+        }
+
+        article {
+            grid-area: article;
+            background-color: lightyellow;
+        }
+
+        .ads {
+            grid-area: ads;
+            background-color: pink;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: antiquewhite;
+        }
+
+        .container > * {
+            padding: 20px;
+            text-align: center;
+            border: 1px solid navy;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>Header</header>
+        <nav>Nav</nav>
+        <article>Article</article>
+        <div class="ads">Ads</div>
+        <footer>Footer</footer>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+ //1.Write a function addNumbers(a, b) that accepts two numbers and returns their sum.
+        
+        function addnumbers(a,b){
+            return a+b;
+        }
+        let result= addnumbers(10,30);
+
+        console.log("add numbers:",result);
+
+//2.Write a function checkEvenOdd(num) that checks whether a given number is even or odd.
+
+        function EvenOdd(num){
+             if(num%2==0){
+            return "Even";
+        }
+        
+        else{
+            return "Odd";
+        }
+    }
+        let result1=EvenOdd(53);
+        console.log("EvenOdd:",result1);
+
+//3.Write a function findLargest(a, b, c) that accepts three numbers and returns the largest number.
+
+        function findLargest(a,b,c){
+            return a,b,c ;
+        }
+        let result2=findLargest(5,10,15);
+        console.log("findlargest:",result2);
+
+//4.Write a function factorial(num) that calculates the factorial of a given number.
+
+        function factorial(num){
+            let fact=1;
+            for(let i=1; i<=num;i++){
+                fact =fact*i;
+            }
+            return fact;}
+        
+        let a=5;
+        let result3=factorial(a);
+        console.log("factorial:",result3);
+
+//5.Write a function that reverses a given string.
+
+       function reverseString(str){
+        return str.split('').reverse('').join('');
+       }
+       let string= "Dayana_K"
+let result5=reverseString(string);
+console.log("reverse:",result5);
+
+//6.Write a function countVowels(str) that counts the number of vowels in a given string.
+
+function countvowels(str){
+    let count=0;
+    for (let i=0; i<str.length; i++){
+            if("aeiou".includes(str[i].toLowerCase())){
+            count++;
+        }
+    }
+    return count;
+}
+let vowelstring="a,e,i,o,u,";
+let result6=countvowels(vowelstring);
+console.log('countvowels:',result6)
+
+
+
+
+
+
+
+
+        </script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        //1.
+
+let str='madam';
+let rev=str.split("").reverse().join("");
+
+if (str==rev) {
+    console.log("Palindrome");
+
+}
+else{
+    console.log("Not Palindrome");
+}
+
+//2.
+let str1="listen";
+let str2="silent";
+
+
+let a = str1.split("").sort().join("");
+let b = str2.split("").sort().join("");
+
+if (a == b) {
+    console.log("Anagram");
+} else {
+    console.log("Not Anagram");
+}
+//3.
+
+let str3 = "hello";
+
+let rev3 = str3.split("").reverse().join("");
+
+console.log(rev3);
+
+//4.
+
+let num = 7;
+let count = 0;
+
+for (let i = 1; i <= num; i++) {
+    if (num % i == 0) {
+        count++;
+    }
+}
+
+if (count == 2) {
+    console.log("Prime number");
+} else {
+    console.log("Not a prime number");
+}
+
+//5.
+
+let x = 10;
+let y = 20;
+
+x = x + y;
+y = x - y;
+x = x - y;
+
+console.log("x =", x);
+console.log("y =", y);
+
+//6.
+let arr = [10, 20, 30, 40, 50];
+
+for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+}
+
+//7.
+for (let i = 1; i <= 100; i++) {
+    console.log(i);
+
+    if (i == 100) {
+        break;
+    }
+}
+
+//8.
+for (let i = 1; i <= 10; i++) {
+
+    if (i == 5) {
+        continue;
+    }
+
+    console.log(i);
+}
+
+//9.
+let courses = ["BCA", "MCA", "CS", "Engineering"];
+
+console.log(courses.includes("BCA"));
+console.log(courses.includes("MCA"));
+console.log(courses.includes("CS"));
+console.log(courses.includes("Engineering"));
+
+//10.
+let nestedArr = [1, 2, 3, [4, 5, 6], [7, 8, 9]];
+
+let result = nestedArr.flat();
+
+console.log(result);
+
+//11.
+let arr2 = [1, 2, 3, [4, 5, 6], [7, 8, 9]];
+
+let result2 = arr2.flat();
+
+console.log(result2);
+
+
+
+
+
+</script>
+    
+</body>
+</html>
